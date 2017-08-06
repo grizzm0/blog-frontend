@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'theme';
+@import url('https://fonts.googleapis.com/css?family=#{$fonts}');
+
+body {
+  font-family: $mat-font-family;
+  margin: 0;
+}
