@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'gb-view',
-  templateUrl: './view.component.html',
+  template: '<router-outlet></router-outlet>',
 })
 export class ViewComponent { }
