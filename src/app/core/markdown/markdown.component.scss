@@ -1,0 +1,22 @@
+$language-title-height: 24px;
+$padding: 8px;
+
+/deep/ .hljs {
+  margin: 0;
+  overflow: hidden;
+  padding: $padding;
+  position: relative;
+
+  &.has-language {
+    padding-top: $language-title-height + $padding;
+  }
+
+  .language {
+    background-color: rgba(255, 255, 255, .15);
+    line-height: $language-title-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
