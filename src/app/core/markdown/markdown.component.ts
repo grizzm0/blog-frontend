@@ -10,9 +10,13 @@ import hljs from 'highlight.js';
 })
 export class MarkdownComponent {
   @Input()
-  private markdown: string;
+  private content: string;
 
-  get renderedMarkdown(): string {
+  get markdown(): string {
+    if (!this.content) {
+      return '';
+    }
+
     const md = markdown({
       highlight: function (str, lang) {
         if (lang && hljs.getLanguage(lang)) {
@@ -28,6 +32,6 @@ export class MarkdownComponent {
       }
     });
 
-    return md.render(this.markdown);
+    return md.render(this.content);
   }
 }
