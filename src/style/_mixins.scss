@@ -1,0 +1,11 @@
+@mixin root-view() {
+  :host {
+    display: block;
+    padding: 16px;
+
+    .container {
+      margin: auto;
+      max-width: 1200px;
+    }
+  }
+}

@@ -23,7 +23,7 @@ module.exports = function (config) {
       environment: 'dev'
     },
     files: [
-      './node_modules/@angular/material/prebuilt-themes/indigo-pink.css'
+      './node_modules/@angular/material/prebuilt-themes/indigo-pink.css',
     ],
     reporters: ['progress', 'kjhtml'],
     port: 9876,
