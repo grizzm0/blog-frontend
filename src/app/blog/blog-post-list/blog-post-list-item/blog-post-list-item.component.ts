@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
-import { BlogPost } from '../shared/model/blog-post';
+import { BlogPost } from '../../shared/model/blog-post';
 
 @Component({
   selector: 'gb-blog-post-list-item',

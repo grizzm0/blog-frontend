@@ -4,14 +4,15 @@ import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
 
 import { HOME_ROUTES } from './home.routes';
-import { BlogPostModule } from '../../blog/blog-post/blog-post.module';
+import { BlogPostListModule } from '../../blog/blog-post-list/blog-post-list.module';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(HOME_ROUTES),
 
-    BlogPostModule,
+    // Internal modules
+    BlogPostListModule,
   ],
   declarations: [
     HomeComponent,

@@ -9,9 +9,8 @@ import { LayoutComponent } from './layout.component';
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(LAYOUT_ROUTES),
-
     MdToolbarModule,
+    RouterModule.forChild(LAYOUT_ROUTES),
   ],
   declarations: [
     LayoutComponent,

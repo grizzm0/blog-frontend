@@ -8,6 +8,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
+        // Internal modules
         ViewModule,
       ],
       declarations: [

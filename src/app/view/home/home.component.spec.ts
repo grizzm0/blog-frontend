@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { HomeComponent } from './home.component';
 import { HOME_ROUTES } from './home.routes';
-import { BlogPostModule } from '../../blog/blog-post/blog-post.module';
+import { BlogPostListModule } from '../../blog/blog-post-list/blog-post-list.module';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -15,7 +15,9 @@ describe('HomeComponent', () => {
       imports: [
         HttpClientTestingModule,
         RouterTestingModule.withRoutes(HOME_ROUTES),
-        BlogPostModule,
+
+        // Internal modules
+        BlogPostListModule,
       ],
       declarations: [
         HomeComponent,

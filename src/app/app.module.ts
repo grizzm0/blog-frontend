@@ -8,14 +8,16 @@ import { ViewModule } from './view/view.module';
 import { UrlInterceptor } from './shared/interceptor/url.interceptor';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+
+    // Internal modules
     ViewModule,
+  ],
+  declarations: [
+    AppComponent,
   ],
   providers: [
     {
