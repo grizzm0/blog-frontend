@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MdCardModule, MdTooltipModule } from '@angular/material';
-import { MomentModule } from 'angular2-moment';
-import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { BlogModule } from '../blog.module';
+import { BlogPostModule } from '../blog-post/blog-post.module';
 import { BlogPostListComponent } from './blog-post-list.component';
 import { BlogPostListItemComponent } from './blog-post-list-item/blog-post-list-item.component';
 import { CoreModule } from '../../core/core.module';
@@ -12,13 +11,11 @@ import { CoreModule } from '../../core/core.module';
 @NgModule({
   imports: [
     CommonModule,
-    MdCardModule,
-    MdTooltipModule,
-    MomentModule,
-    RouterModule,
+    FlexLayoutModule,
 
     // Internal modules
     BlogModule,
+    BlogPostModule,
     CoreModule,
   ],
   declarations: [

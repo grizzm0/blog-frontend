@@ -1,16 +1,1 @@
-<md-card class="mat-elevation-z2" *ngIf="post">
-  <div class="card-media-header" style="background-image: url('https://source.unsplash.com/random/1200x250');">
-    <h1>{{post.title}}</h1>
-  </div>
-  <md-card-header>
-    <img md-card-avatar src="https://avatars0.githubusercontent.com/u/2905853?v=4">
-    <md-card-title>Kristofer Karlsson</md-card-title>
-    <md-card-subtitle mdTooltip="{{post.created.date | amDateFormat:'MMMM Do YYYY'}}"
-                      mdTooltipPosition="below">
-      {{post.created.date | amTimeAgo}}
-    </md-card-subtitle>
-  </md-card-header>
-  <md-card-content>
-    <gb-markdown [content]="post.content"></gb-markdown>
-  </md-card-content>
-</md-card>
+<gb-blog-post [post]="post"></gb-blog-post>

@@ -1,11 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MdCardModule, MdTooltipModule } from '@angular/material';
-import { MomentModule } from 'angular2-moment';
 
 import { BlogPostListComponent } from './blog-post-list.component';
 import { BlogPostListItemComponent } from './blog-post-list-item/blog-post-list-item.component';
 import { CoreModule } from '../../core/core.module';
+import { BlogPostModule } from '../blog-post/blog-post.module';
 
 describe('BlogPostListComponent', () => {
   let component: BlogPostListComponent;
@@ -15,12 +14,10 @@ describe('BlogPostListComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         FlexLayoutModule,
-        MdCardModule,
-        MdTooltipModule,
-        MomentModule,
 
         // Internal modules
         CoreModule,
+        BlogPostModule,
       ],
       declarations: [
         BlogPostListComponent,
