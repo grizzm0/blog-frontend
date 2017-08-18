@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MomentModule } from 'angular2-moment';
 
 import { BlogPostComponent } from './blog-post.component';
-import { CoreModule } from '../../core/core.module';
+import { MarkdownModule } from '../../markdown/markdown.module';
 
 describe('BlogPostComponent', () => {
   let component: BlogPostComponent;
@@ -19,7 +19,7 @@ describe('BlogPostComponent', () => {
         RouterTestingModule,
 
         // Internal modules
-        CoreModule,
+        MarkdownModule,
       ],
       declarations: [
         BlogPostComponent,

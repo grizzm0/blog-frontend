@@ -1,4 +1,4 @@
-import { HalCollection } from '../../../core/shared/model/hal-collection';
+import { HalCollection } from '../../../shared/model/hal-collection';
 import { BlogPost } from './blog-post';
 
 export class BlogPostCollection extends HalCollection {

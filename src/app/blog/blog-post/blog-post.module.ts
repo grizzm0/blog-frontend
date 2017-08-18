@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MomentModule } from 'angular2-moment';
 
 import { BlogPostComponent } from './blog-post.component';
-import { CoreModule } from '../../core/core.module';
+import { MarkdownModule } from '../../markdown/markdown.module';
 
 @NgModule({
   imports: [
@@ -16,7 +16,7 @@ import { CoreModule } from '../../core/core.module';
     RouterModule,
 
     // Internal modules
-    CoreModule,
+    MarkdownModule,
   ],
   declarations: [
     BlogPostComponent,

@@ -6,7 +6,7 @@ import { BlogModule } from '../blog.module';
 import { BlogPostModule } from '../blog-post/blog-post.module';
 import { BlogPostListComponent } from './blog-post-list.component';
 import { BlogPostListItemComponent } from './blog-post-list-item/blog-post-list-item.component';
-import { CoreModule } from '../../core/core.module';
+import { MarkdownModule } from '../../markdown/markdown.module';
 
 @NgModule({
   imports: [
@@ -16,7 +16,7 @@ import { CoreModule } from '../../core/core.module';
     // Internal modules
     BlogModule,
     BlogPostModule,
-    CoreModule,
+    MarkdownModule,
   ],
   declarations: [
     BlogPostListComponent,
