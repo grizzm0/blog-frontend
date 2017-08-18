@@ -18,4 +18,4 @@ import { BlogPostListModule } from '../../blog/blog-post-list/blog-post-list.mod
     ViewHomeComponent,
   ],
 })
-export class HomeModule { }
+export class ViewHomeModule { }

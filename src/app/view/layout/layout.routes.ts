@@ -6,7 +6,7 @@ export const LAYOUT_ROUTES: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      {path: '', pathMatch: 'full', loadChildren: '../home/home.module#HomeModule'},
+      {path: '', pathMatch: 'full', loadChildren: '../view-home/view-home.module#ViewHomeModule'},
       {path: 'blog/post', loadChildren: '../view-blog-post/view-blog-post.module#ViewBlogPostModule'},
     ],
   },
