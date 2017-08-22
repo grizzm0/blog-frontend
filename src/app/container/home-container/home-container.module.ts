@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ViewHomeComponent } from './view-home.component';
+import { HomeContainerComponent } from './home-container.component';
 import { RouterModule } from '@angular/router';
 
-import { VIEW_HOME_ROUTES } from './view-home.routes';
+import { HOME_CONTAINER_ROUTES } from './home-container.routes';
 import { BlogPostListModule } from '../../blog/blog-post-list/blog-post-list.module';
 import { BlogModule } from '../../blog/blog.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(VIEW_HOME_ROUTES),
+    RouterModule.forChild(HOME_CONTAINER_ROUTES),
 
     // Internal modules
     BlogModule,
     BlogPostListModule,
   ],
   declarations: [
-    ViewHomeComponent,
+    HomeContainerComponent,
   ],
 })
-export class ViewHomeModule { }
+export class HomeContainerModule { }

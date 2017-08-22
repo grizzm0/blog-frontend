@@ -2,22 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { VIEW_BLOG_POST_ROUTES } from './view-blog-post.routes';
+import { BLOG_POST_CONTAINER_ROUTES } from './blog-post-container.routes';
 import { BlogModule } from '../../blog/blog.module';
 import { BlogPostModule } from '../../blog/blog-post/blog-post.module';
-import { ViewBlogPostComponent } from './view-blog-post.component';
+import { BlogPostContainerComponent } from './blog-post-container.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(VIEW_BLOG_POST_ROUTES),
+    RouterModule.forChild(BLOG_POST_CONTAINER_ROUTES),
 
     // Internal modules
     BlogModule,
     BlogPostModule,
   ],
   declarations: [
-    ViewBlogPostComponent,
+    BlogPostContainerComponent,
   ],
 })
-export class ViewBlogPostModule { }
+export class BlogPostContainerModule { }

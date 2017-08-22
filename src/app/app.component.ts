@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'gb-root',
-  template: '<gb-view></gb-view>',
+  template: '<router-outlet></router-outlet>',
 })
 export class AppComponent { }

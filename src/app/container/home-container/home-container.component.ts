@@ -7,11 +7,11 @@ import { BlogState, BlogPostSelector } from '../../blog/shared/reducer/blog.redu
 import { BlogPostLoadLatestAction, BlogPostLoadMoreAction } from '../../blog/shared/action/blog-post.action';
 
 @Component({
-  selector: 'gb-view-home',
-  templateUrl: './view-home.component.html',
-  styleUrls: ['./view-home.component.scss'],
+  selector: 'gb-home-container',
+  templateUrl: './home-container.component.html',
+  styleUrls: ['./home-container.component.scss'],
 })
-export class ViewHomeComponent implements OnDestroy {
+export class HomeContainerComponent implements OnDestroy {
   private subscription: Subscription;
   collection: BlogPostCollection;
 

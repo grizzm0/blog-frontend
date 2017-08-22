@@ -1,22 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewNotFoundComponent } from './view-not-found.component';
+import { NotFoundContainerComponent } from './not-found-container.component';
 
-describe('ViewNotFoundComponent', () => {
-  let component: ViewNotFoundComponent;
-  let fixture: ComponentFixture<ViewNotFoundComponent>;
+describe('NotFoundContainerComponent', () => {
+  let component: NotFoundContainerComponent;
+  let fixture: ComponentFixture<NotFoundContainerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        ViewNotFoundComponent,
+        NotFoundContainerComponent,
       ],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViewNotFoundComponent);
+    fixture = TestBed.createComponent(NotFoundContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

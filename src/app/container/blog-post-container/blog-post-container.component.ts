@@ -8,11 +8,11 @@ import { BlogState, BlogPostSelector } from '../../blog/shared/reducer/blog.redu
 import { BlogPostLoadAction, BlogPostSelectAction } from '../../blog/shared/action/blog-post.action';
 
 @Component({
-  selector: 'gb-view-blog-post',
-  templateUrl: './view-blog-post.component.html',
-  styleUrls: ['./view-blog-post.component.scss'],
+  selector: 'gb-blog-post-container',
+  templateUrl: './blog-post-container.component.html',
+  styleUrls: ['./blog-post-container.component.scss'],
 })
-export class ViewBlogPostComponent {
+export class BlogPostContainerComponent {
   post$: Observable<BlogPost>;
 
   constructor(
