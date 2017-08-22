@@ -1,9 +1,11 @@
-import { HalResource } from './hal-resource';
+import { HalCollectionLinks } from './hal-collection-links';
 import { HalEmbedded } from './hal-embedded';
+import { HalResource } from './hal-resource';
 
 export class HalCollection extends HalResource {
-  _total_items: number;
-  _page: number;
-  _page_count: number;
-  _embedded: HalEmbedded;
+  _embedded: HalEmbedded = new HalEmbedded;
+  _links: HalCollectionLinks = new HalCollectionLinks;
+  _total_items: number = null;
+  _page: number = null;
+  _page_count: number = null;
 }
