@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+
+$mat-toolbar-height-desktop: 64px !default;
+$mat-toolbar-height-mobile-portrait: 56px !default;
+$mat-toolbar-height-mobile-landscape: 48px !default;
+
+md-toolbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  &:not(.mat-elevation-z4) {
+    border-bottom: 1px solid rgba(0, 0, 0, .87);
+  }
+}
+
+main {
+  padding-top: $mat-toolbar-height-desktop;;
+
+  @media ($mat-xsmall) and (orientation: portrait) {
+    padding-top: $mat-toolbar-height-mobile-portrait;
+  }
+
+  @media ($mat-small) and (orientation: landscape) {
+    padding-top: $mat-toolbar-height-mobile-landscape;
+  }
+}
