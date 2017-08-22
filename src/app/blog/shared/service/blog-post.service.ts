@@ -20,4 +20,18 @@ export class BlogPostService {
     return this.http.get('/blog/post')
       .map(response => <BlogPostCollection>response);
   }
+
+  getLatest(): Observable<BlogPostCollection> {
+    return this.http.get('/blog/post')
+      .map(response => <BlogPostCollection>response);
+  }
+
+  getNextPage(collection: BlogPostCollection): Observable<BlogPostCollection> {
+    const endpoint = collection._links.next
+      ? collection._links.next.href
+      : collection._links.self.href;
+
+    return this.http.get(endpoint)
+      .map(response => <BlogPostCollection>response);
+  }
 }

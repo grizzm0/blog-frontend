@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { VIEW_HOME_ROUTES } from './view-home.routes';
 import { BlogPostListModule } from '../../blog/blog-post-list/blog-post-list.module';
+import { BlogModule } from '../../blog/blog.module';
 
 @NgModule({
   imports: [
@@ -12,6 +13,7 @@ import { BlogPostListModule } from '../../blog/blog-post-list/blog-post-list.mod
     RouterModule.forChild(VIEW_HOME_ROUTES),
 
     // Internal modules
+    BlogModule,
     BlogPostListModule,
   ],
   declarations: [
